@@ -1,0 +1,39 @@
+{
+  "employees": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "age": 35,
+      "position": "Manager",
+      "salary": 70000
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "age": 29,
+      "position": "Developer",
+      "salary": 60000
+    },
+    {
+      "firstName": "Jim",
+      "lastName": "Brown",
+      "age": 41,
+      "position": "Director",
+      "salary": 80000
+    },
+    {
+      "firstName": "Emily",
+      "lastName": "Johnson",
+      "age": 31,
+      "position": "Designer",
+      "salary": 55000
+    },
+    {
+      "firstName": "Michael",
+      "lastName": "Williams",
+      "age": 26,
+      "position": "Programmer",
+      "salary": 50000
+    }
+  ]
+}
