@@ -1,4 +1,12 @@
 {
+	"addemployee":{
+		"firstName": "",
+    	"lastName": "",
+    	"age": "",
+    	"position": "",
+    	"salary": ""
+	},
+	
   "employees": [
     {
       "firstName": "John",

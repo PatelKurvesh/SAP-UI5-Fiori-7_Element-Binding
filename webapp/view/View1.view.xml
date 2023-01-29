@@ -1,9 +1,76 @@
 <mvc:View controllerName="GithubSAP-UI5-Fiori-7_Element-Binding.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml"
-	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:table="sap.ui.table">
 	<App>
 		<pages>
 			<Page title="{i18n>title}">
-				<content></content>
+				<content>
+					<form:SimpleForm id="emp">
+						<form:content>
+							
+							<Label text="Firrst Name"></Label>
+							<Input id="fname" value="{firstName}"></Input>
+							
+							<Label text="Last Name"></Label>
+							<Input id="lname" value="{lastName}"></Input>
+							
+							<Label text="Age"></Label>
+							<Input id="age" value="{age}"></Input>
+							
+							<Label text="Position"></Label>
+							<Input id="position" value="{position}"></Input>
+							
+							<Label text="Salary"></Label>
+							<Input id="sal" value="{salary}"></Input>
+							
+							<Button text="Submit" press="onSubmit"></Button>
+							<Button text="Clear" press="onClear"></Button>
+							
+						</form:content>
+					</form:SimpleForm>
+					
+					<table:Table rows="{/employees}" selectionMode="Single" rowSelectionChange="onRowSelect">
+						<table:columns>
+							
+							<table:Column>
+								<Label text="First Name"></Label>
+								<table:template>
+									<Input value="{firstName}"></Input>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Last Name"></Label>
+								<table:template>
+									<Input value="{lastName}"></Input>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Age"></Label>
+								<table:template>
+									<Input value="{age}"></Input>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Position"></Label>
+								<table:template>
+									<Input value="{position}"></Input>
+								</table:template>
+							</table:Column>
+							
+							<table:Column>
+								<Label text="Salary"></Label>
+								<table:template>
+									<Input value="{salary}"></Input>
+								</table:template>
+							</table:Column>
+							
+							
+						</table:columns>
+					</table:Table>
+					
+				</content>
 			</Page>
 		</pages>
 	</App>
