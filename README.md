@@ -1,1 +1,2 @@
 # SAP-UI5-Fiori-7_Element-Binding
+Element binding in SAP UI5 allows you to bind a control to a specific data point in the model, rather than binding an expression or property. The control takes its values and metadata from the data point in the model.
