@@ -1,1 +1,6 @@
-/* Enter your custom styles here */
+.sapMIBar-CTX .sapMTitle{
+	font-family: fantasy;
+}
+#__xmlview0--frmTitle{
+	font-size: 3rem;
+}

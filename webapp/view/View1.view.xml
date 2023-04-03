@@ -1,11 +1,13 @@
 <mvc:View controllerName="GithubSAP-UI5-Fiori-7_Element-Binding.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml"
-	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:table="sap.ui.table">
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:table="sap.ui.table">
 	<App>
 		<pages>
 			<Page title="{i18n>title}">
 				<content>
 					<form:SimpleForm id="emp">
-						<form:content>
+						<form:title>
+							<core:Title id="frmTitle" text="FORM"/>
+						</form:title>
 							
 							<Label text="Firrst Name"></Label>
 							<!--<Input id="fname" value="{/addemployee/firstName}"></Input>-->
@@ -13,7 +15,7 @@
 							
 							<Label text="Last Name"></Label>
 							<!--<Input id="lname" value="{/addemployee/lastName}"></Input>-->
-							<Input id="lname" value="{lastName}"></Input>
+							<Input id="lname" value="{lastName}" showValueHelp="true" valueHelpRequest="onOpen"></Input>
 							
 							<Label text="Age"></Label>
 							<!--<Input id="age" value="{/addemployee/age}" ></Input>-->
@@ -30,10 +32,11 @@
 							<Button text="Submit" press="onSubmit"></Button>
 							<Button text="Clear" press="onClear"></Button>
 							
-						</form:content>
-					</form:SimpleForm>
 					
-					<table:Table rows="{/employees}" selectionMode="Single" rowSelectionChange="onRowSelect">
+					</form:SimpleForm>
+					<Button text="Excell Download" press="onDownload"></Button>
+					
+					<table:Table id="employees" rows="{/employees}" selectionMode="Single" rowSelectionChange="onRowSelect">
 						<table:columns>
 							
 							<table:Column>
