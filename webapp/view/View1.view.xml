@@ -56,7 +56,7 @@
 							<table:Column>
 								<Label text="Age"></Label>
 								<table:template>
-									<Input value="{age}"></Input>
+									<Input value="{age}" type="Number"></Input>
 								</table:template>
 							</table:Column>
 							
